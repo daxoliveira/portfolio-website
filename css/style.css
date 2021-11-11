@@ -384,6 +384,8 @@ header {
 /* My Work */
 
 .my-work {
+    max-width: 1000px;
+    margin: 0 auto;
     background-color: var(--clr-dark);
     color: var(--clr-light);
     text-align: center;    
