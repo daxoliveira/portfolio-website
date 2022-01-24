@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/* Custom Properties, update these for your own design */
+/* Custom Properties */
 
 :root {
     --ff-primary: 'Source Sans Pro', sans-serif;
@@ -37,11 +37,9 @@
 
 /* General styles */
 
-/* endable this to add smooth scrolling */
-/* html {
+html {
     scroll-behavior: smooth;
-} */
-
+}
 
 body {
     background: var(--clr-light);
@@ -212,11 +210,6 @@ header {
     opacity: 0;
 }
 
-
-
-
-
-
 .hamburger {
     display: block;
     position: relative;
@@ -231,7 +224,6 @@ header {
     border-radius: 1em;
     transition: transform 250ms ease-in-out;
 }
-
 
 .hamburger::before,
 .hamburger::after {
@@ -289,8 +281,6 @@ header {
     }
 }
 
-
-
 /*  My services section  */
 
 .my-services {
@@ -334,7 +324,7 @@ header {
         margin-right: auto;
     }
     
-    .service + .service {
+    .service + .service{
         margin-left: 2em;
     }
 }
