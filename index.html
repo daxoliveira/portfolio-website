@@ -5,22 +5,31 @@
   <link rel="stylesheet" href="normalize.css" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Dax's Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+  
+  <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" 
+  />
+  <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" 
+    crossorigin="anonymous" 
+  />
+  <link 
+    href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+    rel="stylesheet" 
+  />
 
-  <!-- Update these with your own fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
-    rel="stylesheet" />
-
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
   <header>
     <div class="logo">
-      <img src="img/dax_dark_logo.png" alt="" />
+      <img src="img/daxLogoDark.png" alt="" />
     </div>
     <button class="nav-toggle" aria-label="toggle navigation">
       <span class="hamburger"></span>
@@ -46,7 +55,7 @@
       Hi, I am <strong>Dax Oliveira</strong>
     </h1>
     <p class="section__subtitle section__subtitle--intro">Frontend Developer<br>Cedar Falls, IA</p>
-    <img src="img/dax_profile_01.jpg" alt="a picture of Dax Oliveira smiling" class="intro__img" />
+    <img src="img/daxProfileSmall.jpg" alt="a picture of Dax Oliveira smiling" class="intro__img" />
   </section>
 
   <!-- My services -->
@@ -81,6 +90,7 @@
     <a href="#work" class="btn">My Work</a>
   </section>
 
+  <!-- My work -->
   <section class="my-work" id="work">
     <h2 class="section__title section__title--work">My work</h2>
     <p class="section__subtitle section__subtitle--work">
@@ -88,20 +98,30 @@
     </p>
 
     <div class="portfolio">
-      
+
+      <!-- Portfolio item 04 -->
+      <a href="techNotes.html" class="portfolio__item item-techNotes">
+        <img src="img/techNotes.png" alt="TechNotes Project" class="portfolio__img" />
+      </a>
+
+      <!-- Portfolio item 05 -->
+      <a href="shortsSummary.html" class="portfolio__item item-shortsSummary">
+        <img src="img/shortsSummary.png" alt="Shorts Summary Project" class="portfolio__img" />
+      </a>
+
       <!-- Portfolio item 01 -->
-      <a href="project_01.html" class="portfolio__item">
-        <img src="img/project_01.png" alt="" class="portfolio__img" />
+      <a href="gameOfThronesTopTrumps.html" class="portfolio__item item-gameOfThronesTopTrumps">
+        <img src="img/gameOfThronesTopTrumps.png" alt="Game of Thrones Top Trumps Project" class="portfolio__img" />
       </a>
 
       <!-- Portfolio item 02 -->
-      <a href="https://daxquestionsandanswersgame.netlify.app/" class="portfolio__item">
-        <img src="img/questions-and-answers-game.png" alt="" class="portfolio__img" />
+      <a href="https://daxquestionsandanswersgame.netlify.app/" class="portfolio__item item-questionsAndAnswersGame">
+        <img src="img/questionsAndAnswersGame.png" alt="Questions and Answers Game Project" class="portfolio__img" />
       </a>
 
       <!-- Portfolio item 03 -->
-      <a href="https://daxoliveira-react-movie-search-app.netlify.app/" class="portfolio__item">
-        <img src="img/react-movie-search.png" alt="" class="portfolio__img" />
+      <a href="https://daxoliveira-react-movie-search-app.netlify.app/" class="portfolio__item item-reactMovieSearch">
+        <img src="img/reactMovieSearch.png" alt="React Movie Search Project" class="portfolio__img" />
       </a>
     </div>
 
@@ -109,7 +129,6 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <!-- replace with your own email address -->
     <a href="mailto:dax.oliveira.br@gmail.com" class="footer__link">dax.oliveira.br@gmail.com</a>
     <ul class="social-list">
       <li class="social-list__item">
