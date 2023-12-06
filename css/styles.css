@@ -449,40 +449,114 @@ header {
 }
 
 
-/* Individual portfolio item styles */
+/* Project Page Styles */
 
-.portfolio-item-individual {
+.project {
+    position: relative;
     padding: 0 2em 2em;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
+}
+
+.project__header {
+    max-width: 1200px;
+}
+
+.project__title {
+    font-size: var(--fs-h2);
+    margin-top: auto;
+}
+
+.project__title--intro {
+    font-weight: var(--fw-reg);
+}
+
+.project__subtitle {
+    max-width: 1200px;
+    font-size: var(--fs-h3);
+    border-radius: 12px;
+    box-shadow: var(--bs);
 
 }
 
-.portfolio-item-individual p {
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+.project__subtitle--intro {
+    background: var(--clr-accent);
+    padding: .25em 1em;
+    font-family: var(--ff-secondary);
+    margin-bottom: 1em;
 }
 
-.portfolio-item-individual img {
-    max-width: 800px;
+
+
+@media (min-width: 600px) {
+    .project__header {
+        display: grid;
+        width: min-content;
+        margin: 0 auto;
+        grid-column-gap: 1em;
+        grid-template-areas: 
+            "img title"
+            "img subtitle";
+        grid-template-columns: min-content max-content;
+    }
+    
+    .project__logo-img {
+        grid-area: img;
+        min-width: 250px;
+        position: relative;
+        z-index: 2;
+    }    
+    
+    .project__subtitle--intro {
+        align-self: start;
+        grid-column: -1 / 1;
+        grid-row: 2;
+        text-align: right;
+        position: relative;
+        left: -1.5em;
+        width: calc(100% + 1.5em);
+    }
+}
+
+
+
+
+
+.project__logo-img {
+    height: auto;
+    position: relative;
+    z-index: 2;
+    border: 3px solid var(--clr-dark);
+    border-radius: 12px;
+    box-shadow: var(--bs);
+}
+
+.project__cover-img {
     margin-left: auto;
     margin-right: auto;
     border: 3px solid var(--clr-dark);
+    border-radius: 12px;
+    max-width: 100%;
+    height: auto;
+    box-shadow: var(--bs);
 }
 
-.portfolio-item-individual .app {
+.project .demo-link {
     max-width: 200px;
     margin: 2em auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 8px;
+    box-shadow: var(--bs);
 }
 
-.portfolio-item-individual .code {
+.project .source-code-link {
     max-width: 200px;
     margin: 2em auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-radius: 8px;
+    box-shadow: var(--bs);
 }
