@@ -457,7 +457,7 @@ header {
 .project {
     position: relative;
     padding: 0 2em 2em;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -521,10 +521,6 @@ header {
     }
 }
 
-
-
-
-
 .project__logo-img {
     height: auto;
     position: relative;
@@ -549,7 +545,7 @@ header {
     margin: 2em auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     border-radius: 8px;
     box-shadow: var(--bs);
 }

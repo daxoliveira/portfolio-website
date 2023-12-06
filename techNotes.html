@@ -46,38 +46,58 @@
     <!-- Intro Section -->
     
     <!-- Project Details Section -->
-    <div class="portfolio-item-individual">
-        <h1 class="">TechNotes <strong>Full-Stack MERN App</strong></h1>
-        <p class="">An Efficient Internal Note Management</p>
-        <img src="img/techNotes.png" alt="" class="intro__img">
-        <p>
-            TechNotes is a sophisticated Full-Stack MERN (MongoDB, Express.js, React, Node.js) application tailored for small businesses seeking efficient internal note management. It provides a seamless platform for assigning and managing notes, enhancing collaboration within the organization.
-        </p>
+    <section class="project">
+      <div class="project__header">
+          <h1 class="project__title project__title--intro">
+              TechNotes <br><strong>Notes Management</strong>
+          </h1>
+          <p class="project__subtitle project__subtitle--intro">
+            Full-Stack MERN Application
+          </p>
+          <img 
+              src="img/techNotes.png" 
+              alt="TechNotes Header Picture" 
+              class="project__logo-img"
+          >
+      </div>
+      <p class="project__description">
+          A full-stack MERN (MongoDB, Express, React, Node.js) application designed to streamline internal note management
+          for small businesses. Users can easily assign, organize, and manage notes within the system.
+      </p>
+      <p class="project__description">
+          To explore TechNotes, you can use the following credentials:
+      </p>
+      <ul class="project__credentials">
+          <li><strong>Username:</strong> Dax</li>
+          <li><strong>Password:</strong> 1234!</li>
+      </ul>
 
-        <p>
-            To experience the application, you can explore the live version <a href="https://technotes-s1li.onrender.com/" target="_blank" rel="noopener noreferrer">here</a>. The source code for the front-end is available on GitHub at
-            <a href="https://github.com/daxoliveira/techNotes-client" target="_blank" rel="noopener noreferrer">this repository</a>, and the back-end code can be found
-            <a href="https://github.com/daxoliveira/techNotes-server" target="_blank" rel="noopener noreferrer">here</a>.
-        </p>
+      
+      <div class="project__links">
+          <a 
+              href="https://technotes-s1li.onrender.com"
+              class="btn demo-link" 
+              target="_blank"
+          >
+          Explore TechNotes <i class="fab fa-www"></i>
+          </a>
+          <a 
+              href="https://github.com/daxoliveira/techNotes-client" 
+              class="btn source-code-link"
+              target="_blank"
+          >
+              Frontend Source Code <i class="fab fa-github"></i>
+          </a>
+          <a 
+              href="https://github.com/daxoliveira/techNotes-server" 
+              class="btn source-code-link"
+              target="_blank"
+          >
+              Backend Source Code <i class="fab fa-github"></i>
+          </a>
+      </div>
 
-        <p>
-            To test the TechNotes application, you can use the following credentials:
-            <br>
-            <strong>Username:</strong> Dax
-            <br>
-            <strong>Password:</strong> 1234!
-        </p>
-
-        <div class="project-links">
-            <a href="https://technotes-s1li.onrender.com/" class="btn app" target="_blank">Try TechNotes</a>
-            <a href="https://github.com/daxoliveira/techNotes-client" class="btn code" target="_blank">
-                <strong>Frontend Source Code</strong> <i class="fab fa-github"></i>
-            </a>
-            <a href="https://github.com/daxoliveira/techNotes-server" class="btn code" target="_blank">
-                <strong>Backend Source Code</strong> <i class="fab fa-github"></i>
-            </a>
-        </div>
-    </div>
+  </section>
 
     <!-- Footer Section -->
     <footer class="footer">
