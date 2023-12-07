@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="normalize.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dax's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <div class="logo">
+                <img src="img/daxLogoDark.png" alt="">
+            </div>
+        </a>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="project">
+        <div class="project__header">
+            <h1 class="project__title project__title--intro">
+                React Movie Search <br><strong>with TMDB API</strong>
+            </h1>
+            <p class="project__subtitle project__subtitle--intro">
+                React.js
+            </p>
+            <img 
+                src="img/reactMovieSearch.png" 
+                alt="React Movie Search Header Picture" 
+                class="project__logo-img"
+            >
+        </div>
+        <p class="project__description">
+            An application built with React.js that consumes The Movie Database (TMDB) API. With this app, you can find
+            the definitive list of pretty much any movie ever made.
+        </p>
+
+        <a 
+            href="https://daxoliveira-react-movie-search-app.netlify.app"
+            class="btn demo-link" 
+            target="_blank"
+        >
+        View Demo
+        </a>
+            
+        <a 
+            href="https://github.com/daxoliveira/react_movie_search" 
+            class="btn source-code-link"
+            target="_blank"
+        >
+            Source Code <i class="fab fa-github"></i>
+        </a>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- replace with your own email address -->
+        <a href="mailto:dax.oliveira.br@gmail.com" class="footer__link">dax.oliveira.br@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/daxoliveira" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.linkedin.com/in/daxoliveira/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
